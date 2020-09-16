@@ -21,6 +21,7 @@ def get_bot_response_2(user_response_2):
     else:
         return choice(respond_other)
 
+
 def get_bot_response_3(user_response_3):
     respond_yes = ["Hell yeah brother. Welcome to the American dream.", "There was honestly no other acceptable answer. Well done.", "You passed the test. Proceed to the next window to collect your burger."]
     respond_other_2 = ["That's not how you spell 'yes.'", "Imagine being this wrong. Try again.", "It's not opposite day today. Try again."]
@@ -29,6 +30,7 @@ def get_bot_response_3(user_response_3):
         return choice(respond_yes)
     else:
         return choice(respond_other_2)
+
 
 print("Hello, I am here to help you decide on your nutritional needs.")
 
@@ -69,6 +71,8 @@ while True:
         bot_response_2 = get_bot_response_2(user_response_2)
         print(bot_response_2)
         continue
+
+
 
 while True:
     user_response_3 = str.lower(input("Yes or no? "))
