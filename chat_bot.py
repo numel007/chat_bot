@@ -34,6 +34,7 @@ def get_bot_response_3(user_response_3):
 
 
 print("Hello, I am here to help you decide on your nutritional needs.")
+print("Enter 'stop' or 'done' at any time to exit.")
 
 user_response_1 = ""
 user_response_2 = ""
