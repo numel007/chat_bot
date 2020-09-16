@@ -1,12 +1,13 @@
 from random import choice
 
+
 def get_bot_response(user_response):
     respond_hungry = ["I'm sure I can pick a great burger for you.", "Sounds like you could use a good burger.", "Hunger is best solved with a burger to the facehole."]
     respond_full = ["You're full? No such thing. You could easily stuff down another small cheeseburger.", "You're lying. You get a burger.", "You're not full. You're just weak. A burger it is."]
 
-    if user_response == "hungry":
+    if user_response_1 == "hungry":
         return choice(respond_hungry)
-    elif user_response == "full":
+    elif user_response_1 == "full":
         return choice(respond_full)
     else:
         return "I don't understand. Are you hungry or full? "
@@ -34,25 +35,25 @@ def get_bot_response_3(user_response_3):
 
 print("Hello, I am here to help you decide on your nutritional needs.")
 
-user_response = ""
+user_response_1 = ""
 user_response_2 = ""
 user_response_3 = ""
 
 while True:
-    user_response = str.lower(input("How are you currently feeling? Hungry or full? "))
+    user_response_1 = str.lower(input("How are you currently feeling? Hungry or full? "))
 
-    if user_response == "stop" or user_response == "done":
+    if user_response_1 == "stop" or user_response_1 == "done":
         exit()
-    elif user_response == "hungry":
-        bot_response = get_bot_response(user_response)
+    elif user_response_1 == "hungry":
+        bot_response = get_bot_response(user_response_1)
         print(bot_response)
         break
-    elif user_response == "full":
-        bot_response = get_bot_response(user_response)
+    elif user_response_1 == "full":
+        bot_response = get_bot_response(user_response_1)
         print(bot_response)
         break
     else:
-        bot_response = get_bot_response(user_response)
+        bot_response = get_bot_response(user_response_1)
         print(bot_response)
         continue
 
