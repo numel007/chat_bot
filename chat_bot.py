@@ -2,7 +2,7 @@
 from random import choice
 
 
-# First line of questions. Decides which response to return. Regcognized inputs are "hungry", "full", and other text.
+# First line of questions. Decides which response to return. Recognized inputs are "hungry", "full", and other text.
 def get_bot_response(user_response_1):
     respond_hungry = ["I'm sure I can pick a great burger for you.", "Sounds like you could use a good burger.", "Hunger is best solved with a burger to the facehole."]
     respond_full = ["You're full? No such thing. You must consume another burger.", "You're lying. You get a burger. No, there are no other options.", "You're not full. You're just weak. A burger it is."]
@@ -14,10 +14,10 @@ def get_bot_response(user_response_1):
         # Returns random choice from respond_full list
         return choice(respond_full)
     else:
-        return "I don't understand. Are you hungry or full? "
+        return "I don't understand."
 
 
-# Second line of questions. Decides which response to return. Regcognized inputs are "patty", "meat", "burger", and other text. 
+# Second line of questions. Decides which response to return. Recognized inputs are "patty", "meat", "burger", and other text. 
 def get_bot_response_2(user_response_2):
     respond_patty = ["That's a lot of meat. Are you sure about this?", "You might get the meat sweats. Is that alright with you?", "For legal reasons I must confirm you actually want more protein."]
     respond_other = ["Wrong answer. I'm assuming that was a typo and you meant to write 'patty.'", "Close but no cigar. More meat is a better idea.", "That's a strange well to spell 'patty.'"]
