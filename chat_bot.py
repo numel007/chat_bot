@@ -20,7 +20,7 @@ def get_bot_response(user_response_1):
 # Second line of questions. Decides which response to return. Recognized inputs are "patty", "meat", "burger", and other text. 
 def get_bot_response_2(user_response_2):
     respond_patty = ["That's a lot of meat. Are you sure about this?", "You might get the meat sweats. Is that alright with you?", "For legal reasons I must confirm you actually want more protein."]
-    respond_other = ["Wrong answer. I'm assuming that was a typo and you meant to write 'patty.'", "Close but no cigar. More meat is a better idea.", "That's a strange well to spell 'patty.'"]
+    respond_other = ["Wrong answer. I'm assuming that was a typo and you meant to write 'patty.'", "Close but no cigar. More meat is a better idea.", "That's a strange way to spell 'patty.'"]
 
     if user_response_2 == "patty" or user_response_2 == "meat" or user_response_2 == "burger":
         # Returns random choice from respond_patty list
@@ -31,7 +31,7 @@ def get_bot_response_2(user_response_2):
 
 # Third line of questions. Decides which response to return. Recognized inputs are "yes" and other text.
 def get_bot_response_3(user_response_3):
-    respond_yes = ["Hell yeah brother. Welcome to the American dream.", "There was honestly no other acceptable answer. Well done.", "You passed the test. Proceed to the next window to collect your burger."]
+    respond_yes = ["Hell yeah brother, welcome to the American dream.", "There was honestly no other acceptable answer. Well done.", "You passed the test. Proceed to the next window to collect your burger."]
     respond_other_2 = ["That's not how you spell 'yes.'", "Imagine being this wrong. Try again.", "It's not opposite day today. Try again."]
 
     if user_response_3 == "yes":
